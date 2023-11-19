@@ -1,12 +1,12 @@
 import React from "react";
+import { UserButton } from "@clerk/nextjs";
 
-const Dashboard = () => {
+const Home = () => {
   return (
     <div>
-      {" "}
-      <p>This is a protected page</p>
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
 };
 
-export default Dashboard;
+export default Home;
